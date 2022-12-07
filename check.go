@@ -10,6 +10,7 @@ func main() {
 	//slices
 	//append works only on the slices just like a push for arr
 	var arr []int = []int{1, 2, 3, 4, 5}
+	//as append doesnt bring any change in the slices we need to update as below
 	arr = append(arr, 23)
 
 	//slice
