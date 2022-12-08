@@ -21,7 +21,7 @@ func main() {
 
 	//operations on slices
 
-	arr := []int{8, 2, 3, 3, 4, 4, 5, 56, 68, 8, 99, 9999, 9, 99999, 3, 4, 5}
+	// arr := []int{8, 2, 3, 3, 4, 4, 5, 56, 68, 8, 99, 9999, 9, 99999, 3, 4, 5}
 
 	// arr1 := [5]int{5, 3, 3, 2, 12}
 	//sort only works on the slices
@@ -33,13 +33,16 @@ func main() {
 
 	// 	fmt.Println(x, "index")
 
-	index := sort.SearchInts(arr, 99)
+	// index := sort.SearchInts(arr, 99)
 
-	fmt.Println(index)
+	// fmt.Println(index)
 
-	str := []string{"hemanth", "z", "bhushan", "check"}
+	// str := []string{"hemanth", "z", "bhushan", "check"}
 
-	sort.Strings(str)
-	fmt.Println(str, "sorted arr in strings")
+	// sort.Strings(str)
+	// fmt.Println(str, "sorted arr in strings")
+	str1 := []string{"check", "run", "a", "b", "c"}
+	index1 := sort.SearchStrings(str1, "k")
 
+	fmt.Println(index1)
 }
