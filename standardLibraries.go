@@ -42,7 +42,7 @@ func main() {
 	// sort.Strings(str)
 	// fmt.Println(str, "sorted arr in strings")
 	str1 := []string{"check", "run", "a", "b", "c"}
-	index1 := sort.SearchStrings(str1, "k")
+	index1 := sort.SearchInts(str1, "a")
 
 	fmt.Println(index1)
 }
