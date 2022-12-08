@@ -40,6 +40,6 @@ func main() {
 	str := []string{"hemanth", "z", "bhushan", "check"}
 
 	sort.Strings(str)
-	fmt.Println(str, "sorted string")
+	fmt.Println(str, "sorted arr in strings")
 
 }
