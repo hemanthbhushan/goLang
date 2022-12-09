@@ -45,5 +45,7 @@ func individual(x string) (string, string) {
 }
 func main() {
 
-	fmt.Println(individual("hemanth bhushan"))
+	x, y := individual("hemanth bhushan")
+
+	fmt.Println(x, y)
 }
