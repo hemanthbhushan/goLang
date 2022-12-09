@@ -1,27 +1,49 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func calculation(a, b int) {
-	cal := a + b
+// import "fmt"
 
-	fmt.Println(cal)
+// func calculation(a, b int) int {
+// 	cal := a + b
 
-}
+// 	return cal
 
-func check(y []int, x func(a, b int)) string {
+// }
 
-	for index, value := range y {
-		x(index, value)
+// func check(y []int, x func(a, b int) int) []int {
+// 	var results []int
+
+// 	for index, value := range y {
+// 		results = append(results, x(index, value))
+// 	}
+// 	return results
+// }
+
+func individual(x string) (string, string) {
+	n := strings.ToUpper(x)
+
+	names := strings.Split(n, " ")
+
+	var initials []string
+
+	for _, value := range names {
+
+		initials = append(initials, value[:1])
 
 	}
-	return "complete"
-}
 
+	if len(initials) > 1 {
+		return initials[0], initials[1]
+	}
+
+	return "none", "none"
+
+}
 func main() {
 
-	arr := []int{1, 2, 3, 4}
-
-	fmt.Println(check(arr, calculation))
-
+	fmt.Println(individual("hemanth bhushan"))
 }
