@@ -1,26 +1,26 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func updateValue(x *string) {
-	*x = "change"
-}
+// func updateValue(x *string) {
+// 	*x = "change"
+// }
 
-func main() {
+// func main() {
 
-	name := "hemanth"
+// 	name := "hemanth"
 
-	fmt.Println("name location", &name)
+// 	fmt.Println("name location", &name)
 
-	store := &name
-	fmt.Println("name location in store", store)
+// 	store := &name
+// 	fmt.Println("name location in store", store)
 
-	fmt.Println("name in pointer store", *store)
+// 	fmt.Println("name in pointer store", *store)
 
-	fmt.Println("value in name before using pointer to update", name)
+// 	fmt.Println("value in name before using pointer to update", name)
 
-	updateValue(store)
+// 	updateValue(store)
 
-	fmt.Println("value in name after using pointer to update", name)
+// 	fmt.Println("value in name after using pointer to update", name)
 
-}
+// }
